@@ -9,6 +9,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import gaussian_kde
 
+st.set_page_config(layout="wide")
+
 @st.cache_data
 def load_data(file_path):
     df = pd.read_csv(file_path)
